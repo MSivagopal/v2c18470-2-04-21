@@ -1,0 +1,27 @@
+package assign;
+
+public class ClasOverRideMulti {
+	public static void main(String[] args) {
+		ClasMulti cv = new ClasMulti();
+		int z = cv.mul(2, 20, 0);
+		System.out.println(z);
+	}
+
+}
+
+class ClasMultiOverRide
+{
+	public int mul(int a, int b, int c) 
+	{
+		System.out.println("addition");
+		return a+b+c;
+	}
+}
+class ClasMulti extends ClasMultiOverRide
+{
+	public int mul(int a, int b, int c)
+	{
+		System.out.println("multiplication");
+		return a*b*c;
+	}
+}
